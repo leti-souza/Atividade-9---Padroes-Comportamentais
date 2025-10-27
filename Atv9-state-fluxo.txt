@@ -1,0 +1,26 @@
+                                                                                                     CLASSE: PROJETOR
+                                                                                                           |
+                                                                                                           |
+                                                                                                         Play()
+                                                                                                         Stop()
+                                                                                                      manutencao()
+                                                                                                           |
+                                                                                                           |
+                                                                                                OBJETO DE ESTADO ATUAL
+                                                                                                           |
+                                                                                                           |
+                            * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - * - - - - - - - - - - - - - - - - - - - - - - - - - *
+                            |                                                                |                                                                |                                                   |
+                        DESLIGADO                                                        ESQUETANDO                                                     RODANDO FILME                                        EM MANUTENÇÃO
+                            |                                                                |                                                                |                                                   |
+       ***- - - - - - - - - - - - - - - - ***                             *** - - - - - - - - - - - - - - ***                             *** - - - - - - - - - - - - - - ***                     *** - - - - - - - - - - - - - ***
+    Botão Play()            |        Botão Stop()                     Botão Play()           |         Botão Stop()                   Botão Play()            |       Botão Stop()             Botão Play()       |          Botão Stop()
+  Inicia aquecimento        |        Nada acontece                Finaliza aquecimento       |      Interrompe e Desliga          Já está rodando o filme     |       Para o filme           Não pode iniciar     |        Nada acontece
+(muda para “Esquentando”)   |    (permanece desligado)              e inicia o Filme         |                                    Pode reiniciar ou avisar    |        e desliga                o filme           |  
+                            |                                                                |                                                                |                                                   |
+                            |                                                                |                                                                |                                                   |
+                            |                                                                |                                                                |                                                   |
+                           ***                                                              ***                                                              ***                                                 ***
+                    Botão Manutencao()                                              Botão Manutencao()                                                Botão Manutencao()                                  Botão Manutencao()
+                       envia para                                                       envia para                                                Não pode iniciar manutenção                           Já está em Manutenção 
+                     (EmManutencao)                                                   (EmManutencao)                                                       no momento
