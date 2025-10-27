@@ -1,0 +1,26 @@
+classe: PROJETOR
+play()
+stop()
+manutencao()
+
+Objeto de Estado Atual
+
+Estado: DESLIGADO
+Botão “PLAY” -> Inicia aquecimento (muda para “Esquentando”)
+Botão “STOP” -> Nada acontece (permanece desligado)
+Botão "MANUTENÇÃO" -> Envia para manutenção (muda para “EmManutencao”)
+
+Estado: ESQUENTANDO
+Botão “PLAY” -> Finaliza aquecimento e inicia o filme (muda para “RodandoFilme”)
+Botão “STOP” -> Interrompe e desliga (muda para “Desligado”)
+Botão “MANUTENÇÃO” -> Envia para manutenção (muda para “EmManutencao”)
+
+Estado: RODANDO FILME
+Botão “PLAY” -> Já está rodando, pode reiniciar ou avisar que já está rodando
+Botão “STOP” -> Para o filme e desliga (muda para “Desligado”)
+Botão “MANUTENÇÃO” -> Não pode iniciar manutenção agora (permanece)
+
+Estado: EM MANUTENÇÃO
+Botão “PLAY” -> Não pode iniciar o filme
+Botão “STOP” -> Nada ocorre
+Botão “MANUTENÇÃO” -> Já está em manutenção
